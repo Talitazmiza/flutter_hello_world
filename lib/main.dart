@@ -35,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void _percobaanSatu() {
     setState(() {
       _counter++;
-      if(_counter>10) {
+      if(_counter>20) {
         _counter = 1;
       }
     });
