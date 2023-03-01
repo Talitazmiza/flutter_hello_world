@@ -90,18 +90,19 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _counter++;
       _text = "Prima: ";
+      String tPrime = '';
       for(int i=2; i<=_counter; i++){
-        String tempPrima = '';
         for(int j=2; j<=i; j++){
           if(j==i && i!=2) break;
           if(i%j == 0 && i != 2){
-            tempPrima = '';
+            tPrime = '';
             break;
           } else {
-            tempPrima = '$i ';
+            tPrime = '$i ';
           }
+          // i%j == 0 && i != 2 ? tempPrima = '' : tempPrima = '$i ';
         }
-        _text += tempPrima;
+        _text += tPrime;
       }
     });
   }
